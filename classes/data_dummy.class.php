@@ -34,6 +34,9 @@ class DataDummy
             case "String":
                 $value = self::getString($colunm->length);
                 break;
+            case "longtest":
+                $value = self::getString($colunm->length);
+                break;
             case "list":
                 $value = $colunm->items[rand(0, (count($colunm->items) - 1))];
                 break;

@@ -8,8 +8,8 @@ class Dbconfig {
 
     function Dbconfig() {
         $this -> serverName = 'localhost';
-        $this -> userName = '';
-        $this -> passCode = '';
+        $this -> userName = 'root';
+        $this -> passCode = 'oshan1991';
         $this -> dbName = '';
     }
 }

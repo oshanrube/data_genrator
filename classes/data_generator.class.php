@@ -89,6 +89,10 @@ class DataGenerator
         {
             return array('name' => $column->Field, 'type' => 'String', 'length' => 400);
         }
+        elseif ($column->Type == 'longtext')
+        {
+            return array('name' => $column->Field, 'type' => 'String', 'length' => 400);
+        }
         else
         {
             echo 'asd';

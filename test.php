@@ -8,8 +8,8 @@ require_once 'classes/data_dummy.class.php';
 
 
 $dataGenerator = new DataGenerator();
-$schema = 'local_ab';
-$tables = array("table_1","table_2");
+$schema = 'attune_portal';
+$tables = array("TransportRequest");
 //number of records
 $size = 1000;
 echo "Loading data\n";
@@ -25,5 +25,5 @@ foreach ($tables as $tablename)
 //file_put_contents('dummy.sql', implode("\n",$q));
 //else
 echo "Inserting ".count($qa)."\n";
-$dataGenerator->runSQL($q);
-echo "Compleate\n";
+//$dataGenerator->runSQL($q);
+echo "Complete\n";
